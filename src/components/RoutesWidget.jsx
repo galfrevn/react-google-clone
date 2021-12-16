@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { Results } from './Results';
 
 export const RoutesWidget = () => (
-  <div className="p-4">
+  <div className="p-5">
     <Switch>
       <Route exact path="/">
         <Redirect to="/search" />

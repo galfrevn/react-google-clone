@@ -6,7 +6,7 @@ import { Links } from './Links'
 
 export const Search = () => {
 
-    const [text, setText] = useState('Elon Musk')
+    const [text, setText] = useState('Valentin Galfre')
     const { setSearchTerm } = useResultContext();
     const [devouncedValue] = useDebounce(text, 300);
 
@@ -19,14 +19,14 @@ export const Search = () => {
             <input
                 value={text}
                 type="text"
-                className='sm:w-96 w-80 h-10 dark:bg-gray-200 border rounded-full shadow-sm outline-none p-6 text-black hover:shadow-lg'
+                className='sm:w-96 w-full h-10 dark:bg-white rounded outline-none p-6 text-black'
                 placeholder='Search something or type URL'
                 onChange={(e) => setText(e.target.value)}
             />
             {text && (
                 <button 
                     type='button'
-                    className='absolute top-1.5 right-4 text-2xl text-gray-5000'
+                    className='absolute top-3.5 right-5 text-sm text-bold text-gray-400'
                     onClick={() => setText("")}
                 >
                     X
